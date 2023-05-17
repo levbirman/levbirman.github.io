@@ -10,8 +10,10 @@ layout: default
         <article class="post">
           <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
           <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-          <div class="post-content">
-            <p class="post-excerpt">{{ post.excerpt }}</p>
+          <div class="post-content outline-container">
+            <div class="outline">
+              {{ post.content }}
+            </div>
             <a class="read-more" href="{{ post.url }}">Read more <span class="arrow">&#10132;</span></a>
           </div>
         </article>
